@@ -1,9 +1,9 @@
 {
   "name": "npm-test-toragonite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is an npm test project",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/i18n-mediark/index.js",
+  "types": "dist/i18n-mediark/index.d.ts",
   "scripts": {
     "test": "NODE_ENV=test node test.spec.js",
     "build": "tsc"
