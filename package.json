@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/Toragonite/npm-test/issues"
   },
-  "homepage": "https://github.com/Toragonite/npm-test#readme"
+  "homepage": "https://github.com/Toragonite/npm-test#readme",
+  "dependencies": {
+    "next": "^14.2.13",
+    "next-i18next": "^15.3.0",
+    "react": "^18",
+    "react-i18next": "^15.0.0",
+    "i18next": "^23.12.2",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.6.2",
+    "i18next-resources-to-backend": "^1.2.1"
+  }
 }
