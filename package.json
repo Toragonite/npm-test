@@ -1,10 +1,12 @@
 {
   "name": "npm-test-toragonite",
   "version": "1.0.0",
-  "description": "this is npm test project",
-  "main": "index.js",
+  "description": "This is an npm test project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "NODE_ENV=test node test.spec.js"
+    "test": "NODE_ENV=test node test.spec.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,11 @@
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",
     "i18next-resources-to-backend": "^1.2.1"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
