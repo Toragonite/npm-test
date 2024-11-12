@@ -6,11 +6,12 @@
     "declarationDir": "./dist",
     "module": "CommonJS",
     "target": "ES6",
-    "lib": ["es2017", "dom"],      // Add this line to support Object.values
+    "lib": ["es2017", "dom"],
+    "jsx": "react",                 // Add this line to support JSX syntax
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "**/*.tsx"],  // Include .ts and .tsx files
   "exclude": ["node_modules", "dist"]
 }

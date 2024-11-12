@@ -1,6 +1,6 @@
 {
   "name": "npm-test-toragonite",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This is an npm test project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,35 +1,11 @@
-import { createInstance } from 'i18next';
-import resourcesToBackend from 'i18next-resources-to-backend';
-import { initReactI18next } from 'react-i18next/initReactI18next';
-import { getOptions } from './settings';
-import { LocaleTypes } from './util';
+// Example index.ts
 
-const initI18next = async (lng: LocaleTypes, ns: string) => {
-    const i18nInstance = createInstance();
-    await i18nInstance
-        .use(initReactI18next)
-        .use(
-            resourcesToBackend(
-                (language: LocaleTypes, namespace: string) =>
-                    import(`./locales/${language}/${namespace}.json`)
-            )
-        )
-        .init(getOptions(lng, ns));
-    return i18nInstance;
-};
+// Export functions, classes, or constants from other files
+export * from "./helper";
+export * from "./middleware";
+export * from "./util";
+export * from "./provider";
+export * from "./settings";
 
-export async function useTranslation(
-    lng: LocaleTypes,
-    ns: string,
-    options: { keyPrefix?: string } = {} //forcely removed error, might occur problem
-) {
-    const i18nextInstance = await initI18next(lng, ns);
-    return {
-        t: i18nextInstance.getFixedT(
-            lng,
-            Array.isArray(ns) ? ns[0] : ns,
-            options.keyPrefix
-        ),
-        i18n: i18nextInstance,
-    };
-}
+// You can also export default objects or functions if needed
+// export default someFunction;
