@@ -1,0 +1,22 @@
+{
+  "name": "npm-test-toragonite",
+  "version": "1.0.0",
+  "description": "this is npm test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toragonite/npm-test.git"
+  },
+  "keywords": [
+    "npm-test"
+  ],
+  "author": "by myself",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toragonite/npm-test/issues"
+  },
+  "homepage": "https://github.com/Toragonite/npm-test#readme"
+}
